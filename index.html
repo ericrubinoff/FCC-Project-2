@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FCC Project 2</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+</head>
+<body>
+        <div id="formContainer">
+                <form id="survey-form">
+            
+                  <h1 id="title">Tell us about <span id="nowrap">your stay.</span></h1>
+                  <p id="description">Please take a moment to fill out the required information about your stay:</p>
+            
+                  <div>
+                    <label for="name" id="name-label">Name:</label>
+                    <input type="text" id="name" class="placeholder" placeholder="Enter your full name" required>
+                    <label for="email" id="email-label">Email:</label>
+                    <input type="email" id="email" class="placeholder" placeholder="Enter your email address" required>
+                    
+                    <label for="number" id="number-label">Number:</label>
+                    <input type="tel" pattern="[0-9]{8}" id="number" class="placeholder" placeholder="0000-00-00" maxlength="8" min="00000000" max="99999999">
+                  </div>
+                  <hr>
+                  <p>Help us improve our service:</p>
+            
+                  <div>
+                    <label for="dropdown">Did you hear about us online?</label>
+                    <select id="dropdown" class="placeholder">
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              <option value="Maybe">Other</option></select><br>
+                  </div>
+                  <hr>
+            
+                  <!-- Radio buttons -->
+                  <p>During your stay:</p>
+                  <div class="selector-group">
+                    <label for="dropdown">Please mark your preferred payment method:</label>
+                    <div id="radio-container">
+            
+                      <span> <div id="labelgroup"><input type="radio" name="payment" value="Debit" id="radio-input"><label for="payment" id="radio-label">Debit</label></div></span>
+            
+                      <span><div id="labelgroup"><input type="radio" name="payment" value="Credit" id="radio-input"><label for="payment" id="radio-label">Credit</label></div></span>
+            
+                      <span><div id="labelgroup"><input type="radio" name="payment" value="Cash" id="radio-input"><label for="payment" id="radio-label">Cash</label></div></span>
+            
+                      <span><div id="labelgroup"><input type="radio" name="payment" value="Other" id="radio-input"><label for="payment" id="radio-label">Other</label></div></span>
+            
+                    </div>
+                  </div>
+            
+                  <!-- Checkboxes -->
+            
+                  <div class="selector-group">
+                    <label for="dropdown">Did you use any of the following amenities?</label>
+                    <div id="checkbox-container">
+            
+                      <span><div id=radiogroup><input type=checkbox name=amenities value="OptionA" id="checkbox-input"><label for="amenities" id="checkbox-label">Wi-Fi</label></div></span>
+            
+                      <span><div id=radiogroup><input type=checkbox name=amenities value="OptionB" id="checkbox-input"><label for="amenities" id="checkbox-label">Laundry</label></div></span>
+            
+                      <span><div id=radiogroup><input type=checkbox name=amenities value="OptionC" id="checkbox-input"><label for="amenities" id="checkbox-label">Pool</label></div></span>
+            
+                      <span><div id=radiogroup><input type=checkbox name=amenities value="OptionD" id="checkbox-input"><label for="amenities" id="checkbox-label">Gym</label></div></span>
+            
+                    </div>
+                  </div>
+                  <hr>
+            
+                  <!-- Addittional comments -->
+                   <p>We'd love to know your thoughts!</p>
+                  <div>
+                           <label for="comments">Addittional comments or suggestions?</label><br>
+                    <textarea class="placeholder" name="comments" rows="5" cols="33" placeholder="The house was great! We especially enjoyed the outdoor patio..."></textarea>
+                  </div>
+                  <hr>
+                  
+                  <!-- Submit -->
+            
+                  <input type="submit" id="submit" value="Submit">
+                  
+                </form>
+</body>
+</html>
